@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <link href="animation.css" rel="stylesheet"> </head>
+
+<body>
+    <h1 class="animated shake">Adivina el numero</h1> </body>
+<script>
+    var mensaje = "Ingresa un numero del 1 al 10";
+    var numero_aleatorio = parseInt(Math.random() * 10);
+    var numero_usuario = parseInt(prompt(mensaje, "0"));
+    
+    console.log("Aleatorio: " + numero_aleatorio);
+    console.log("Usuario: " + numero_usuario);
+    
+    while (numero_aleatorio !== numero_usuario) {
+        numero_usuario = parseInt(prompt(mensaje, ""));
+    }
+    alert("Felicidades, lo has conseguido")
+</script>
+
+</html>
