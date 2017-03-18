@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="#">
+    <title>Hotel Barcelona!</title>
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet"> </head>
+
+<body onload="mostrar()">
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation"><a href="#">About</a></li>
+                    <li role="presentation"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Hotel Barcelona!</h3> </div>
+        <div class="jumbotron">
+            <h2 class="text-center">Registro Habitaciones!</h2>
+            <form id="myForm">
+                <div class="form-group">
+                    <label for="nombreCliente">Nombre Cliente:</label>
+                    <input type="text" class="form-control" id="nombreCliente" placeholder="Nombre"> </div>
+                <div class="form-group">
+                    <label for="correoCliente">Correo Electronico</label>
+                    <input type="email" class="form-control" id="correoCliente" placeholder="Correo"> </div>
+                <div class="form-group">
+                    <label for="hbt">Numero de Habitacion</label>
+                    <select id="hbt" class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-default" id="registrarCLiente">Registrar Cliente!</button>
+                </div>
+            </form>
+        </div>
+        <div id="lista" class="row marketing">
+            
+            
+        </div>
+        <footer class="footer">
+            <p>&copy; 2017 Hotel Barcelona, Inc.</p>
+        </footer>
+    </div>
+    <!-- /container -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
